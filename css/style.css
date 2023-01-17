@@ -1,0 +1,681 @@
+/*=============================== 
+Common Css part start 
+===============================*/
+* {
+  margin: 0;
+  padding: 0;
+}
+ol,
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+p {
+  margin: 0;
+}
+/* common theme css part start */
+:root {
+  --nunito: "Nunito", sans-serif;
+  --poppins: "Poppins", sans-serif;
+  --open-sans: "Open Sans";
+  --text-color: #29313d;
+  --btn-bg: #ff5538;
+  --main-bg: #fbf3f0;
+}
+.banner__title {
+  font-family: var(--poppins);
+  font-size: 64px;
+  font-weight: 700;
+  color: var(--text-color);
+  line-height: 130%;
+  max-width: 695px;
+  margin: 0 auto;
+  text-transform: capitalize;
+}
+.page__title {
+  font-family: var(--poppins);
+  font-size: 48px;
+  font-weight: 600;
+  color: var(--text-color);
+  line-height: 140%;
+  text-transform: capitalize;
+}
+.page__subtitle {
+  font-family: var(--poppins);
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--btn-bg);
+  text-transform: capitalize;
+  line-height: 140%;
+  margin-bottom: 10px;
+}
+.content__title {
+  font-family: var(--roboto);
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--title-color);
+  text-transform: capitalize;
+}
+.text {
+  font-family: var(--nunito);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 200%;
+  color: var(--text-color);
+}
+.theme__btn {
+  font-family: var(--nunito);
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--btn-bg);
+  border: 1px solid transparent;
+  cursor: pointer;
+  padding: 14px 28px;
+  border-radius: 18px;
+  text-transform: capitalize;
+  transition: all 0.3s linear;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.theme__btn.active,
+.theme__btn:hover {
+  border: 1px solid var(--btn-bg);
+  background: transparent;
+  color: var(--btn-bg);
+}
+.page__padding {
+  padding: 120px 0;
+}
+/* common theme css part end */
+/*=============================== 
+Common Css part end 
+===============================*/
+
+/*=============================== 
+nav part css start 
+===============================*/
+nav.navbar {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  /* background: var(--main-bg); */
+}
+.nav-item {
+  padding: 0 20px;
+}
+.nav-link {
+  text-transform: capitalize;
+  font-family: var(--open-sans);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-color);
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.nav-link:hover,
+.nav-link:hover i.nav__icon {
+  color: var(--btn-bg);
+}
+i.nav__icon {
+  padding-left: 8px;
+  color: var(--text-color);
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+/*=============================== 
+nav part css end 
+===============================*/
+
+/*=============================== 
+banner part css start 
+===============================*/
+#banner {
+  width: 100%;
+  padding-top: 293px;
+  padding-bottom: 500px;
+  background: url(../images/hero_bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+.banner__content {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+.banner--text--modify {
+  padding: 14px 0 44px;
+  max-width: 560px;
+  margin: 0 auto;
+}
+/*============== banner shape start ==============*/
+.absolute {
+  position: absolute;
+}
+.left-0 {
+  left: 0;
+}
+.right-0 {
+  right: 0;
+}
+.top-0 {
+  top: 0;
+}
+.bottom-0 {
+  bottom: 0;
+}
+.banner--shape--modify {
+  bottom: 10%;
+  left: 20%;
+}
+.animate__round {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 1px solid var(--btn-bg);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: rotate 4s infinite linear;
+  -webkit-animation: rotate 4s infinite linear;
+}
+.round__inner__ball {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--btn-bg);
+  position: absolute;
+  left: 9px;
+  bottom: 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: rotate 4s infinite linear;
+  -webkit-animation: rotate 4s infinite linear;
+}
+.animate--round--1 {
+  top: 150px;
+  left: 44%;
+}
+.animate--round--2 {
+  top: 350px;
+  right: -60px;
+  animation-duration: 2s;
+  border: 1px solid #c087ee;
+}
+.round--ball--2 {
+  background: #c087ee;
+}
+.animate--round--3 {
+  left: 15%;
+  bottom: 210px;
+  width: 260px;
+  height: 260px;
+  border: 1px solid #dda8c8;
+  animation-duration: 8s;
+}
+.round--ball--3 {
+  width: 60px;
+  height: 60px;
+  left: 30px;
+  background: linear-gradient(#6fbbdc, #edecfb);
+}
+.dot__shape {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #c087ee;
+  border-radius: 50%;
+  top: 210px;
+  right: 35%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: tb 1s infinite alternate;
+  -webkit-animation: tb 1s infinite linear alternate;
+}
+.close__shape {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: rotate 3s infinite linear;
+  -webkit-animation: rotate 3s infinite linear;
+}
+.close__shape::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 6px;
+  border-radius: 5px;
+  background: #c087ee;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.close__shape::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 6px;
+  border-radius: 5px;
+  background: #c087ee;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+}
+
+.close--sp--1 {
+  top: 320px;
+  right: 25%;
+}
+.close--sp--2 {
+  top: 140px;
+  left: 25%;
+}
+.close--sp--3 {
+  bottom: 520px;
+  left: 8%;
+}
+.close--sp--4 {
+  bottom: 440px;
+  right: 50%;
+}
+.close--sp--2::after,
+.close--sp--2::before {
+  background: #ffabba;
+}
+.close--sp--3::after,
+.close--sp--3::before {
+  background: #70badd;
+}
+.close--sp--4::after,
+.close--sp--4::before {
+  background: #df857c;
+}
+
+/*=============================== 
+banner part css end 
+===============================*/
+
+/*=============================== 
+service part css start 
+===============================*/
+#service {
+  position: relative;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.service__item {
+  background: #fff;
+  padding: 30px 25px 30px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+.service__icon i.fa-solid {
+  font-size: 64px;
+  color: var(--btn-bg);
+}
+h4.service__title {
+  font-family: var(--poppins);
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text-color);
+  padding: 36px 0 16px;
+  text-transform: capitalize;
+}
+/*=============================== 
+service part css end 
+===============================*/
+
+/*=============================== 
+about part css start 
+===============================*/
+#about {
+  padding: 80px 0;
+  position: relative;
+}
+.about--title--modify {
+  max-width: 450px;
+}
+.about__right {
+  position: relative;
+  z-index: 1;
+}
+.about--right--title--modify {
+  font-size: 36px;
+  max-width: 570px;
+}
+.about--right--text--modify {
+  padding: 20px 0 48px;
+  max-width: 501px;
+}
+.about__right__shape {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/*=============================== 
+about part css end 
+===============================*/
+
+/*=============================== 
+portfolio part css start 
+===============================*/
+#portfolio {
+  position: relative;
+}
+.portfolio__header {
+  position: relative;
+  z-index: 1;
+}
+h3.portfolio--title--modify {
+  max-width: 693px;
+}
+.portfolio__item {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio__item__content {
+  width: 100%;
+  padding: 30px;
+  background: #fff;
+  position: absolute;
+  transform: translateY(100%);
+  bottom: 0;
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  box-sizing: border-box;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.portfolio__item:hover .portfolio__item__content {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+h4.portfolio__item__title {
+  font-family: var(--poppins);
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text-color);
+  text-transform: capitalize;
+}
+a.portfolio__link {
+  font-family: var(--nunito);
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--btn-bg);
+  text-transform: capitalize;
+}
+.portfolio__shape {
+  position: absolute;
+  width: 20%;
+  top: 0;
+  left: 0;
+}
+/*=============================== 
+portfolio part css end 
+===============================*/
+
+/*=============================== 
+counting part css start 
+===============================*/
+#counting {
+  background: #fdf9f8;
+  position: relative;
+}
+.counting__item {
+  background: #fff;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 74px 0;
+}
+.counting__num {
+  font-family: var(--poppins);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 140%;
+  color: var(--text-color);
+}
+.counting__right {
+  position: relative;
+  z-index: 1;
+}
+.counting--title--modify {
+  max-width: 570px;
+}
+.content--right--text--modify {
+  max-width: 525px;
+  padding: 20px 0 40px;
+}
+.counting__shape {
+  position: absolute;
+  width: 25%;
+  bottom: 0;
+  right: 0;
+}
+/*=============================== 
+counting part css end 
+===============================*/
+
+/*=============================== 
+partner part css start 
+===============================*/
+.partner__header {
+  margin-bottom: 48px;
+}
+h3.partner--title--modify {
+  max-width: 849px;
+  margin: 0 auto;
+  text-align: center;
+}
+/*=============================== 
+partner part css end 
+===============================*/
+
+/*=============================== 
+testimonial part css start 
+===============================*/
+#testimonial {
+  background: #fdf9f8;
+}
+.testimonial__left__img__wrapper {
+  margin: 60px 0;
+}
+.testimonial__left__img__item img {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.testimonial--left--text--modify {
+  font-size: 20px;
+  line-height: 180%;
+}
+.client__name h3 {
+  font-family: var(--open-sans);
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--text-color);
+  line-height: 180%;
+}
+.slide__btn {
+  padding: 20px;
+  background: var(--btn-bg);
+  color: #fff;
+  border: 1px solid transparent;
+  margin: 0 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.slide__btn:hover {
+  background: transparent;
+  border: 1px solid var(--btn-bg);
+}
+.slide__btn i.fa-solid {
+  font-size: 24px;
+  color: #fff;
+}
+.slide__btn:hover i.fa-solid {
+  color: var(--btn-bg);
+}
+.testimonial__right__img img {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+/*=============================== 
+testimonial part css end 
+===============================*/
+
+/*=============================== 
+project submit part css start 
+===============================*/
+#project__submit {
+  padding: 100px 0;
+  background: #ffd7c8;
+  position: relative;
+}
+.project__submit__header {
+  position: relative;
+  border-bottom: 1px solid var(--text-color);
+  padding-bottom: 48px;
+  z-index: 1;
+}
+h6.project__subtitle {
+  font-family: var(--poppins);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+  color: var(--text-color);
+}
+.project__submit__content {
+  margin-top: 24px;
+  max-width: 1070px;
+}
+.project__submit__shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/*=============================== 
+project submit part css end 
+===============================*/
+
+/*=============================== 
+footer part css start 
+===============================*/
+footer#footer {
+  padding: 120px 0 0;
+}
+.footer--left--text--modify {
+  padding: 32px 0;
+  max-width: 449px;
+}
+h3.footer__title {
+  font-family: var(--open-sans);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 140%;
+  margin-bottom: 48px;
+  color: var(--text-color);
+  text-transform: capitalize;
+}
+.footer__menu ul li a {
+  font-family: var(--nunito);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 120%;
+  color: var(--text-color);
+  display: block;
+  padding: 15px 0;
+  text-transform: capitalize;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.footer__menu ul li a:hover {
+  color: var(--btn-bg);
+}
+.copyright {
+  padding: 80px 0 10px;
+}
+.copyright__right a {
+  font-family: var(--nunito);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 200%;
+  color: var(--text-color);
+  text-transform: capitalize;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.copyright__right a:hover {
+  color: var(--btn-bg);
+}
+/*=============================== 
+footer part css end 
+===============================*/
